@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/my.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+<!--<div id="toTopB_blk"></div>-->
+<!--<a href="#toTopB_blk" class="toTop toTop01"><div>&nbsp;</div></a>-->
+<!--<a href="#toTopB_blk" class="toTop toTop02"><div>&nbsp;</div></a>-->
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!--第一部分:图片+汉堡包图标-->
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand my-logo">
+        <img src="picture/logos.png" alt="">
+      </a>
+      <a href="#menu" data-toggle="collapse" class="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+    <!--第二部分:可折叠区域-->
+    <div id="menu" class="collapse navbar-collapse navbar-right">
+      <!--左侧菜单-->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页</a></li>
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown">
+            产品服务
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">固件下载</a></li>
+            <li><a href="#">硬件产品</a></li>
+            <li><a href="">OEM 定制</a></li>
+          </ul>
+        </li>
+        <li><a href="">场景案例</a></li>
+        <li><a href="">渠道合作</a></li>
+        <li><a href="">技术支持</a></li>
+        <li class="btn_nav">
+          <a class="btn btn-success" href="" target="_blank">爱快云</a>
+        </li>
+        <li class="btn_nav">
+          <a class="btn" href="" target="_blank">论坛</a>
+        </li>
+        <li class="language">
+          <a href="javascript:;" class="lang">EN</a>
+          <span>/</span>
+          <a href="javascript:;" class="lang">中文</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+  $(function () {
+    $('.dropdown-menu a').click(function () {
+      document.cookie = 'lang=' + $(this).attr('lang') + ';expires=1';
+      location.href = $(this).attr('url');
+    });
+
+    $('#menu>ul>li').click(function (e) {
+      e.preventDefault();
+      $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    $('li.dropdown').mouseover(function () {
+      $(this).addClass('open');
+    }).mouseout(function () {
+      $(this).removeClass('open');
+    });
+  });
+</script>
+<div class="container">
+  <div id="ad3" class="carousel slide"
+       data-interval="888888000"
+       data-pause="null" data-ride="carousel">
+    <div class="carousel-inner" id="banner">
+      <div id="ban1" class="item active">
+        <div>
+          <img src="images/intro/logo_qiyeweixin.png">
+        </div>
+        <div class="sortMer-img">
+          <p>
+            <img src="images/intro/spread_banner01.png" style=" width: 98%; max-width: 750px;">
+          </p>
+        </div>
+      </div>
+      <div id="ban2" class="item">
+        <div id="dm03_earth"></div>
+        <div id="dm03_btn">
+          <a href="" target="_blank">
+            <img alt="了解详情" src="images/intro/banner03_btn_01.png">
+          </a>
+          <a href="" target="_blank">
+            <img alt="立即开通" src="images/intro/banner03_btn_02.png">
+          </a>
+        </div>
+      </div>
+      <div id="ban3" class="item">
+        <div class="demo_banner">
+          <div class="banners_bg">
+            <div class="banner_text">
+              <div class="banner_head"><span>爱快3.0</span>如期而至</div>
+              <div>一次100到0的重建，一次0至1的蜕变，需要怎样的勇气</div>
+              <div>破茧为蝶的突破，只为挖掘更具价值的用户需求，更高的用户体验，唯有精雕细琢，我们别无选择</div>
+              <div class="go_detail"><a href="">了解详情</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ban4" class="item">
+        <em id="dm01_a">
+          <img src="images/intro/dm01_a.png" alt="无线组网 从未如此简单">
+          <em id="dm01_b"><img src="images/intro/dm01_b.png" alt="无线组网"></em>
+        </em>
+        <em id="dm01_c"><img src="images/intro/dm01_c.png"></em>
+        <em id="dm01_d"><img src="images/intro/dm01_d.png"></em>
+        <em id="dm01_e">
+          <img src="images/intro/dm01_e.png">
+          <div id="dm01_fa">
+            <em class="dm01_f01"><img src="images/intro/dm01_f01.png"></em>
+            <em class="dm01_f02"><img src="images/intro/dm01_f05.png"></em>
+            <em class="dm01_f03"><img src="images/intro/dm01_f02.png"></em>
+            <em class="dm01_f04"><img src="images/intro/dm01_f04.png"></em>
+            <em class="dm01_f05"><img src="images/intro/dm01_f08.png"></em>
+            <em class="dm01_f06"><img src="images/intro/dm01_f03.png"></em>
+            <em class="dm01_f07"><img src="images/intro/dm01_f01.png"></em>
+            <em class="dm01_f08"><img src="images/intro/dm01_f05.png"></em>
+            <em class="dm01_f09"><img src="images/intro/dm01_f06.png"></em>
+            <em class="dm01_f010"><img src="images/intro/dm01_f07.png"></em>
+            <em class="dm01_f011"><img src="images/intro/dm01_f04.png"></em>
+            <em class="dm01_f012"><img src="images/intro/dm01_f02.png"></em>
+          </div>
+        </em>
+      </div>
+    </div>
+    <ul class="carousel-indicators">
+      <li data-slide-to="0" data-target="#ad3" class="active"></li>
+      <li data-slide-to="1" data-target="#ad3"></li>
+      <li data-slide-to="2" data-target="#ad3"></li>
+      <li data-slide-to="3" data-target="#ad3"></li>
+    </ul>
+  </div>
+</div>
+<div style="height: 500px"></div>
+
+
+</body>
+</html>
